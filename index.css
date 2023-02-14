@@ -1,0 +1,16 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, #QWE {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+img {
+	height: 150px;
+}
