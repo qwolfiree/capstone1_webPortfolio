@@ -20,8 +20,8 @@
 	<body>
 
 	<!-- NAVBAR START -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" id="QWE" href="#">QWE</a>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+			<a class="navbar-brand" id="QWE" href="#landing">QWE</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -29,25 +29,27 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-				<a class="nav-link" href="#">Projects</a>
+				<a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
-				<a class="nav-link" href="#">Tools<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="#tools">Tools</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="#">Contact Me</a>
+				<a class="nav-link" href="#contact">Contact Me</a>
 			</ul>
 			</div>
 		</nav>
 	<!-- NAVBAR END -->
 
-		<div class="text-light bg-secondary pt-4">
+		<div class="text-light pb-lg-5 pb-sm-3 mt-5" id="body-bg">
 		<!-- Landing Start -->
-			<div class="p-5 bg-dark container-fluid d-flex" id="landing">
-				<img src="https://pbs.twimg.com/media/FktJLjGXgAAQ3AP?format=jpg&name=small" class="rounded-circle mr-5">
-				<div class="align-bottom pt-5 mt-3">
+			<div class="p-3 d-flex justify-content-center align-items-center" id="landing">
+				<div class="p-3 mr-lg-5">
+					<img src="https://pbs.twimg.com/media/FktJLjGXgAAQ3AP?format=jpg&name=small" class="rounded-circle img-fluid">
+				</div>
+				<div class="p-3">
 					<h1>Queen Wolfie Ecleo</h1>
-					<h3>Full Stack Web Developer</h3>
+					<h3><s>Future</s> Full-Stack Web Developer</h3>
 				</div>
 			</div>
 		<!-- Landing End -->
@@ -70,22 +72,28 @@
 				<div class="text-center p-5">
 					<h2>Projects</h2>
 				</div>
-				<div class="d-flex text-dark text-justify p-3">
-					<div class="bg-light">
-						<a href="https://www.google.com/" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" class="img-fluid"></a>
-					    <div>
+				<div class="container-fluid">
+					<div class="project bg-light p-lg-5 m-3 text-dark row">
+						<div class="text-center p-3 col-md-6">
+							<a href="https://www.google.com/" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png"></a>
+						</div>
+					    <div class="text-justify p-3 col-md-6">
 					    	<p>Google LLC is an American multinational technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, artificial intelligence, and consumer electronics. It has been referred to as "the most powerful company in the world" and one of the world's most valuable brands due to its market dominance, data collection, and technological advantages in the area of artificial intelligence.</p>
 					    </div>
 					</div>
-					<div class="bg-primary">
-						<a href="https://www.youtube.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" class="img-fluid"></a>
-					    <div>
+					<div class="project bg-light p-lg-5 m-3 text-dark row">
+						<div class="text-center p-3 col-md-6">
+							<a href="https://www.youtube.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png"></a>
+						</div>
+					    <div class="text-justify p-3 col-md-6">
 					    	<p>YouTube is a global online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and is the second most visited website, after Google Search. YouTube has more than 2.5 billion monthly users who collectively watch more than one billion hours of videos each day. As of May 2019, videos were being uploaded at a rate of more than 500 hours of content per minute.</p>
 					    </div>
 					</div>
-					<div class="bg-danger">
-						<a href="https://www.facebook.com/" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" class="img-fluid"></a>
-					    <div>
+					<div class="project bg-light p-lg-5 m-3 text-dark row">
+						<div class="text-center p-3 col-md-6">
+							<a href="https://www.facebook.com/" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"></a>
+						</div>
+					    <div class="text-justify p-3 col-md-6">
 					    	<p>Meta Platforms, Inc., doing business as Meta and formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services. Meta is one of the world's most valuable companies and among the ten largest publicly traded corporations in the United States.</p>
 					    </div>
 					</div>
@@ -97,35 +105,39 @@
 			<div id="tools">
 				<div class="text-center p-5">
 					<h2>Tools</h2>
-					<div class="d-flex justify-content-lg-around">
+					<div class="d-flex justify-content-center">
+						<div>
 						<img width="150" src="images/logo-html5.png"/>
 						<img width="150" src="images/logo-css3.png"/>
-						<img width="150" src="images/logo-bootstrap.png">
-						<img width="150" src="images/logo-git.png"/>
                         <img width="150" src="images/logo-sublime-text-3.png"/>
+                    </div>
+                    <div>
+						<img width="150" src="images/logo-git.png"/>
+						<img width="150" src="images/logo-bootstrap.png">
                         <img width="150" src="images/logo-gitlab-ci-cd.png"/>
+					</div>
 					</div>
 				</div>
 			</div>
 		<!-- Tools End -->
 
 		<!-- Contact Start -->
-			<div class="text-center" id="contact">
+			<div class="text-center mr-lg-5 ml-lg-5" id="contact">
 				<h2 class="p-3">Contact</h2>
-				<div class="d-flex justify-content-center p-3 bg-dark p-5">
+				<div class="d-flex justify-content-center p-3 p-5 rounded" id="contactform">
 					<form class="text-left vw-100 p-2">
 						<div class="row">
 						    <div class="col">
-						    	<label for="FullName">Full Name</label>
+						    	<label for="FullName">Full Name:</label>
 						    	<input type="text" class="form-control" id="FullName" placeholder="Taylor Swift">
 						    </div>
 						    <div class="col">
-						    	<label for="Email">Email</label>
+						    	<label for="Email">Email:</label>
 						    	<input type="text" class="form-control" placeholder="taylor13@taylorswift.com" id="Email">
 						    </div>
 						  </div>
 						<div class="form-group pt-2 pb-2">
-							<label for="EmailContent">Email Content</label>
+							<label for="EmailContent">Email Content:</label>
 							<textarea class="form-control" id="Message" rows="3"></textarea>
 						</div>
 						<button type="button" class="btn btn-light">Send Email</button>
@@ -134,9 +146,13 @@
 			</div>
 		<!-- Contact Me Page End -->
 
-		<!-- Footer Start -->
-		<!-- Footer End -->
 		</div>
+
+		<!-- Footer Start -->
+			<div class="p-3 text-center text-light" id="paa">
+				<p>Awooo | Di ko alam ano ilalagay dito | Siguro lagay ko links | 2023 na</p>
+			</div>
+		<!-- Footer End -->
 
 	<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

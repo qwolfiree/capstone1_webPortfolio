@@ -6,11 +6,41 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1, h2, h3, #QWE {
+h1, h2, h3, #QWE, s {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
 
+h2, h3 {
+	color: #d8c2bd;
+}
+
 img {
 	height: 150px;
+}
+
+#landing {
+	min-height: 100vh;
+	background-color: #444c62;
+}
+
+#navigation, #paa {
+	background-color: #332b3e;
+}
+
+/*.project {
+	max-width: 30em;
+}*/
+
+#contactform {
+	background-color: #303545;
+	font-weight: bold;
+}
+
+#body-bg {
+	background-color: #767496;
+}
+
+#paa {
+	letter-spacing: 0.2rem;
 }
